@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Closet</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="desktop-menu" >
+                <li id="sapatosButton">Sapatos</li>
+                <li id="shortsButton">Shorts</li>
+                <li id="calcasButton">Calças</li>
+                <li id="salopetesButton">Salopetes</li>
+    
+            </ul>
+    
+            <ul class="esf desktop-menu">
+                <li><a href="pages/envio/index.html">Envio</a> </li>
+                <li><a href="pages/sac/index.html">SAC</a> </li>
+            </ul>
+        </nav>
+
+        <nav class="navbar2">
+            <!-- aparece apenas quando visto em aparelhos com largura menor que 500px -->
+            <ul class="mobile-menu">
+                <li>Closet</li>
+                <li id="menuButton" > <img src="./assets/menu.svg" alt=""> </li>
+            </ul>
+        
+            <div></div>
+
+        </nav>
+
+
+
+
+    </header>
+
+    <section> <img src="./assets/logo.jpg" alt="">
+    </section>
+    <a href="./pages/carrinho/index.html">
+        <div class="carrinho">
+
+            <span class="quantidade">0</span>
+            <img src="./assets/carrinho.svg" alt="">
+
+        </div>
+    </a>
+
+
+    <div class="localidade"><a href="./pages/envio/index.html">
+            <div id="endereco"> <span><img src="/assets//mappin.svg" alt=""></span>
+                <p id="cidade"></p>
+            </div>
+        </a>
+
+    </div>
+
+    <main>
+        <div id="produtos">
+        </div>
+
+        <div id="carrinho">
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

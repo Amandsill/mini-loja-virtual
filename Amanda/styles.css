@@ -1,0 +1,305 @@
+body {
+    background-color: rgba(238, 238, 238, 0.966);
+    margin-bottom: 5%;
+    
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Estilização do header */
+
+header {
+    height: 8vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    padding: 30px;
+    position: fixed;
+
+    background-color: #f3d5d3;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.336);
+    z-index: 2;
+    
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+}
+
+
+
+
+li {
+    cursor: pointer; /*Serve para deixar o cursor do mouse com outro estilo ao passar por cima de uma li*/ 
+}
+
+nav.navbar {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+
+}
+
+nav.navbar2 {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+nav.navbar2{
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    width: 100%;
+}
+
+section img {
+    max-width: 30vw;
+    
+}
+section {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3d5d3;
+}
+
+
+.carrinho{
+    position: fixed;
+    left: 93%;
+    top: 14%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 179, 179);
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.carrinho .quantidade {
+    color:  white;
+    position: absolute;
+    left: 65%;
+    top: -4%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+
+.carrinho img {
+    flood-color: black;
+}
+
+#produtos{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+
+    padding-top: 5%;
+
+}
+
+#carrinho {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display:block;    
+
+}
+
+.produto-single{
+    width: 25%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px
+
+}
+
+.produto-single img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0 ;
+
+    
+}
+
+.produto-single p {
+    text-align: center;
+    font-size: 16px;
+    padding: 16px;
+    font-weight: 800;
+}
+
+.produto-single a {
+    color: white;
+    background-color: rgb(2, 155, 155);
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 0 0 10px 10px;
+}
+
+a.adicionar {
+    font-size: 15px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.info-single-checkout {
+    border-bottom: 2px dotted;
+    padding: 10px 0;
+
+}
+
+
+div#endereco {
+    font-size:15px;
+    position: absolute;
+    top: 75vh;
+    left: 13.3%;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.555);
+    z-index: 0;
+    
+}
+
+
+div.localidade div#endereco {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 1%;
+}
+
+
+div.localidade div#endereco img {
+    max-width: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .produto-single {
+        width: 40%;
+        margin-right: 0;
+    }
+
+    .carrinho{
+        left: 90%;
+    }
+
+    div#endereco {
+        
+        top: 73vh;
+        left: 13.4%;
+        
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .produto-single {
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .carrinho{
+        left: 87%;
+    }
+
+     
+    div#endereco {
+        
+        top: 72vh;
+        left: 11.3%;
+        
+        
+    }
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    nav.navbar {
+        background-color: white;
+        height:100%;
+        width: 70%;
+        position: fixed;
+        top: 0;
+        left: -70%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10%;
+        padding: 8%;
+        transition: left 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+
+    }
+
+    nav.mostrar-navbar {
+        left: 0
+    }
+
+    nav.navbar ul {
+        flex-direction: column;
+    }
+    
+    .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav.navbar2{
+        display: block;
+    }
+
+   
+    
+}
+
+
+
+
+@media screen and (max-width: 430px) {
+    .carrinho{
+        left: 84%;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .carrinho{
+        left: 80%;
+    }
+}
